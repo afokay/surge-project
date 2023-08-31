@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    table {
+        @apply w-full;
+    }
+    thead {
+        @apply font-semibold mb-8;
+    }
+    thead, th {
+        @apply text-center py-2;
+    }
+    tbody, tr {
+        @apply border-b;
+    }
+    tbody, td {
+        @apply py-2;
+    }
+}
+
+@layer components {
+    .maintenance {
+        @apply text-yellow-600;
+    }
+    .oke {
+        @apply text-green-600;
+    }
+    .link {
+        @apply font-semibold text-blue-500 hover:text-blue-900;
+    }
+}
